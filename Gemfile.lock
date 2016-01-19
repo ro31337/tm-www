@@ -198,6 +198,12 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (3.3.0)
+      byebug (~> 8.0)
+      pry (~> 0.10)
+    pry-stack_explorer (0.4.9.2)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
     pundit (1.1.0)
       activesupport (>= 3.0.0)
     quiet_assets (1.1.0)
@@ -339,6 +345,9 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
+  pry
+  pry-byebug
+  pry-stack_explorer
   pundit
   quiet_assets
   rails (= 4.2.5)
