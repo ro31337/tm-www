@@ -16,7 +16,7 @@ group :development do
   gem 'spring'
 end
 gem 'administrate'
-gem 'bootstrap-sass'
+gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'devise'
 gem 'high_voltage'
 gem 'pundit'
