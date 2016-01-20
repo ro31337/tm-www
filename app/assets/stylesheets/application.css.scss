@@ -13,8 +13,13 @@
  *= require_tree .
  *= require_self
  */
- body {
+body {
    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
    font-weight: 300;
    font-style: normal;
+}
+
+.btn {
+  font-weight: 300;
+  font-style: normal;
 }
