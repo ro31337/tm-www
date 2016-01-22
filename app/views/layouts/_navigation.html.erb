@@ -9,13 +9,16 @@ end
 <div class="nav navbar-toggleable-xs">
   <nav class="nav navbar-nav">
     <%= link 'Home', root_path %>
-    <%= link 'About', page_path('about'), true %> <!-- active by default in this example -->
+    <%= link 'How it works', page_path('about'), true %> <!-- active by default in this example -->
+    <%= link 'Pricing', page_path('about') %> <!-- active by default in this example -->
+  </nav>
+  <nav class="nav navbar-nav pull-xs-right">
     <% if user_signed_in? %>
       <%= link 'Edit account', edit_user_registration_path %>
       <%= link 'Sign out', destroy_user_session_path, false, :method=>'delete' %>
     <% else %>
-      <%= link 'Sign in', new_user_session_path %>
       <%= link 'Sign up', new_user_registration_path %>
+      <%= link 'Sign in', new_user_session_path %>
     <% end %>
     <% if user_signed_in? %>
       <% if current_user.try(:admin?) %>
