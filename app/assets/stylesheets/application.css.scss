@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+
 body {
    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
    font-style: normal;
@@ -23,28 +25,50 @@ body {
   font-style: normal;
 }
 
-.page-sessions-new {
+.every-page {
   margin-top: 30px;
+}
+
+$default-text-top-margin: 20px;
+
+.smart-wide-column {
+  @extend .col-xs-12;
+  @extend .col-sm-10;
+  @extend .col-md-8;
+  @extend .col-lg-6;
+}
+
+.page-sessions-new {
+  @extend .every-page;
 
   .email-block {
-    padding-top: 20px;
+    padding-top: $default-text-top-margin;
   }
   .checkbox-block {
     width:150px;
-    margin: 20px 0;
+    margin: $default-text-top-margin 0;
   }
   .bottom-links-block {
-    margin-top: 20px;
+    margin-top: $default-text-top-margin;
   }
 }
 
 .page-index {
+  // don't extend .every-page
 }
 
 .page-registrations-new {
-  margin-top: 30px;
+  @extend .every-page;
 
   .email-block {
-    padding-top: 20px;
+    padding-top: $default-text-top-margin;
+  }
+}
+
+.page-passwords-new {
+  @extend .every-page;
+
+  .text-block {
+    margin-top: $default-text-top-margin;
   }
 }

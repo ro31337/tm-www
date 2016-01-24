@@ -4,21 +4,21 @@
       <h3><%= t('try_project') %></h3>
       <!-- <%= devise_error_messages! %> -->
       <div class="row">
-        <div class="form-group email-block col-sm-6 col-xs-12">
+        <div class="form-group email-block smart-wide-column">
           <%= f.label :email %>
           <%= f.email_field :email, :autofocus => true, class: 'form-control' %>
           <%= f.error :email %>
         </div>
       </div>
       <div class="row">
-        <div class="form-group col-sm-6 col-xs-12">
+        <div class="form-group smart-wide-column">
           <%= f.label :password %>
           <%= f.password_field :password, class: 'form-control' %>
           <%= f.error :password %>
         </div>
       </div>
       <div class="row">
-        <div class="form-group col-sm-6 col-xs-12">
+        <div class="form-group smart-wide-column">
           <%= f.label :password_confirmation %>
           <%= f.password_field :password_confirmation, class: 'form-control' %>
           <%= f.error :password_confirmation %>

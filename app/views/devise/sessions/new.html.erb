@@ -4,13 +4,13 @@
       <h3>Sign in</h3>
       <%= devise_error_messages! %>
       <div class="row">
-        <div class="form-group email-block col-sm-6 col-xs-12">
+        <div class="form-group email-block smart-wide-column">
           <%= f.label :email %>
           <%= f.email_field :email, :autofocus => true, class: 'form-control' %>
         </div>
       </div>
       <div class="row">
-        <div class="form-group col-sm-6 col-xs-12">
+        <div class="form-group smart-wide-column">
           <%= f.label :password %>
           <%= f.password_field :password, class: 'form-control' %>
         </div>
