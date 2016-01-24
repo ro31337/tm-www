@@ -17,7 +17,7 @@ end
       <%= link 'Edit account', edit_user_registration_path %>
       <%= link 'Sign out', destroy_user_session_path, false, :method=>'delete' %>
     <% else %>
-      <%= link 'Sign up', new_user_registration_path %>
+      <%= link t('try_project'), new_user_registration_path %>
       <%= link 'Sign in', new_user_session_path %>
     <% end %>
     <% if user_signed_in? %>
