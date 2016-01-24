@@ -16,6 +16,7 @@
     </header>
 
     <div class="<%= "container" if !@skip_container %>">
+      <%= render 'layouts/messages' %>
       <%= yield %>
     </div>
   </body>
